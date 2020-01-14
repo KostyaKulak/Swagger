@@ -1,5 +1,6 @@
 package com.kulak.swagger.entities;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -11,5 +12,6 @@ public enum ContractStatuses {
     SUSPEND("suspend"),
     CLOSE("new");
     @Getter
+    @JsonValue
     private String status;
 }

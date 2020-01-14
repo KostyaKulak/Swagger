@@ -25,15 +25,15 @@ public class KKKApiClientImpl implements KKKApiClient {
 
     @Override
     public Call<Contract> getContract(final String unp) {
-        log.debug("Getting contract by unp {}", unp);
+        log.info("Getting contract by unp {}", unp);
         return getBaseClient().getContract(unp);
     }
 
     @Override
     public Call<Contract> createContract(final String unp, final ContractData contractData) {
-        log.debug("Create contract by unp {} with next data:", unp);
+        log.info("Create contract by unp {} with next data:", unp);
         try {
-            log.debug(new ObjectMapper().writeValueAsString(contractData));
+            log.info(new ObjectMapper().writeValueAsString(contractData));
         } catch (JsonProcessingException e) {
             log.warn("Error logging contract data.");
         }
@@ -42,9 +42,9 @@ public class KKKApiClientImpl implements KKKApiClient {
 
     @Override
     public Call<Contract> updateContract(final String unp, final ContractStatus status) {
-        log.debug("Update contract by unp {} with next data:", unp);
+        log.info("Update contract by unp {} with next data:", unp);
         try {
-            log.debug(new ObjectMapper().writeValueAsString(status));
+            log.info(new ObjectMapper().writeValueAsString(status));
         } catch (JsonProcessingException e) {
             log.warn("Error logging contract status.");
         }

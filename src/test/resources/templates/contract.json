@@ -1,0 +1,47 @@
+{
+  "client": {
+    "client_id": 111,
+    "unp": 101015738,
+    "name": "Белпочта",
+    "affiliate": "string",
+    "form": "РУП",
+    "legal_address": {
+      "postcode": 220001,
+      "region": "Минская",
+      "district": "Борисовский",
+      "cityType": "г",
+      "city": "Стурпень",
+      "streetType": "пр-т",
+      "street": "Мира",
+      "house": 5,
+      "building": "a",
+      "flat": 123
+    },
+    "postal_address": {
+      "postcode": 220001,
+      "region": "Минская",
+      "district": "Борисовский",
+      "cityType": "г",
+      "city": "Стурпень",
+      "streetType": "пр-т",
+      "street": "Мира",
+      "house": 5,
+      "building": "a",
+      "flat": 123
+    }
+  },
+  "contract": {
+    "contract_id": 345,
+    "type": "CardAccount",
+    "number": "186-1BY",
+    "date_from": "2018-08-15T00:00:00.000Z",
+    "date_to": "2019-08-15T00:00:00.000Z",
+    "account": {
+      "bic": "АКВВ ВY 2Х",
+      "iban": "ВY72АКВВ30121002800115500000",
+      "name": "ЦБУ № 529 ОАО \"АСБ \"Беларусбанк\""
+    },
+    "status": "active",
+    "status_reason": "Заключен договора"
+  }
+}
